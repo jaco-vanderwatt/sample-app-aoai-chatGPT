@@ -220,9 +220,9 @@ Note: settings starting with `AZURE_SEARCH` are only needed when using Azure Ope
 
 | App Setting | Value | Note |
 | --- | --- | ------------- |
-|AZURE_SEARCH_SERVICE||The name of your Azure AI Search resource|
-|AZURE_SEARCH_INDEX||The name of your Azure AI Search Index|
-|AZURE_SEARCH_KEY||An **admin key** for your Azure AI Search resource.|
+|AZURE_SEARCH_SERVICE|aai-spi-dev-srch|The name of your Azure AI Search resource|
+|AZURE_SEARCH_INDEX|adls-spi-index|The name of your Azure AI Search Index|
+|AZURE_SEARCH_KEY|ZBjGrsgqbfPGV5PG6P6I5FZtEKbrxQnClzdXqvwwGiAzSeCmvzAT|An **admin key** for your Azure AI Search resource.|
 |AZURE_SEARCH_USE_SEMANTIC_SEARCH|False|Whether or not to use semantic search|
 |AZURE_SEARCH_QUERY_TYPE|simple|Query type: simple, semantic, vector, vectorSimpleHybrid, or vectorSemanticHybrid. Takes precedence over AZURE_SEARCH_USE_SEMANTIC_SEARCH|
 |AZURE_SEARCH_SEMANTIC_SEARCH_CONFIG||The name of the semantic search configuration to use if using semantic search.|
@@ -235,11 +235,11 @@ Note: settings starting with `AZURE_SEARCH` are only needed when using Azure Ope
 |AZURE_SEARCH_VECTOR_COLUMNS||List of fields in your Azure AI Search index that contain vector embeddings of your documents to use when formulating a bot response. Represent these as a string joined with "|", e.g. `"product_description|product_manual"`|
 |AZURE_SEARCH_PERMITTED_GROUPS_COLUMN||Field from your Azure AI Search index that contains AAD group IDs that determine document-level access control.|
 |AZURE_SEARCH_STRICTNESS|3|Integer from 1 to 5 specifying the strictness for the model limiting responses to your data.|
-|AZURE_OPENAI_RESOURCE||the name of your Azure OpenAI resource (only one of AZURE_OPENAI_RESOURCE/AZURE_OPENAI_ENDPOINT is required)|
-|AZURE_OPENAI_MODEL||The name of your model deployment|
+|AZURE_OPENAI_RESOURCE|aai-spi-dev-openai|the name of your Azure OpenAI resource (only one of AZURE_OPENAI_RESOURCE/AZURE_OPENAI_ENDPOINT is required)|
+|AZURE_OPENAI_MODEL|aai-spi-dev-openai|The name of your model deployment|
 |AZURE_OPENAI_ENDPOINT||The endpoint of your Azure OpenAI resource (only one of AZURE_OPENAI_RESOURCE/AZURE_OPENAI_ENDPOINT is required)|
-|AZURE_OPENAI_MODEL_NAME|gpt-35-turbo-16k|The name of the model|
-|AZURE_OPENAI_KEY||One of the API keys of your Azure OpenAI resource (optional if using Entra ID)|
+|AZURE_OPENAI_MODEL_NAME|gpt-35-turbo|The name of the model|
+|AZURE_OPENAI_KEY|63e1c0409c7348f082ae277b23502b33|One of the API keys of your Azure OpenAI resource (optional if using Entra ID)|
 |AZURE_OPENAI_TEMPERATURE|0|What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. A value of 0 is recommended when using your data.|
 |AZURE_OPENAI_TOP_P|1.0|An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. We recommend setting this to 1.0 when using your data.|
 |AZURE_OPENAI_MAX_TOKENS|1000|The maximum number of tokens allowed for the generated answer.|
@@ -248,7 +248,7 @@ Note: settings starting with `AZURE_SEARCH` are only needed when using Azure Ope
 |AZURE_OPENAI_PREVIEW_API_VERSION|2024-02-15-preview|API version when using Azure OpenAI on your data|
 |AZURE_OPENAI_STREAM|True|Whether or not to use streaming for the response. Note: Setting this to true prevents the use of prompt flow.|
 |AZURE_OPENAI_EMBEDDING_NAME||The name of your embedding model deployment if using vector search.
-|UI_TITLE|Contoso| Chat title (left-top) and page title (HTML)
+|UI_TITLE|Perenti SPI Data| Chat title (left-top) and page title (HTML)
 |UI_LOGO|| Logo (left-top). Defaults to Contoso logo. Configure the URL to your logo image to modify.
 |UI_CHAT_LOGO|| Logo (chat window). Defaults to Contoso logo. Configure the URL to your logo image to modify.
 |UI_CHAT_TITLE|Start chatting| Title (chat window)
